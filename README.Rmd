@@ -1,0 +1,33 @@
+---
+output: github_document
+---
+
+# targets_mtcars
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of targets_mtcars is to demonstrate the use of targets to do a small analysis and make a document.
+
+Packages used here:
+
+```{r}
+library(tidyverse)
+library(flextable)
+library(targets)
+```
+
+
+We use the `mtcars` data, summarized thus:
+
+```{r}
+tar_read(mtcars_summary) %>% 
+  flextable()
+```
+
+and make a graph thus:
+
+```{r}
+tar_read(mtcars_plot)
+```
+

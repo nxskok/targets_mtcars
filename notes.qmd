@@ -17,5 +17,6 @@ tar_read(mtcars_plot)
 ```{r}
 tar_make()
 tar_visnetwork()
+use_readme_rmd()
 ```
 
