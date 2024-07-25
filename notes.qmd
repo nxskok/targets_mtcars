@@ -1,0 +1,21 @@
+```{r}
+library(targets)
+```
+
+
+```{r}
+data("mtcars")
+write.csv(mtcars, "mtcars.csv", row.names = FALSE)
+# write.csv(head(mtcars), "mtcars.csv", row.names = FALSE)
+```
+
+```{r}
+tar_read(mtcars_plot)
+```
+
+
+```{r}
+tar_make()
+tar_visnetwork()
+```
+

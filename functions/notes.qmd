@@ -1,0 +1,7 @@
+
+
+```{r}
+data("mtcars")
+write.csv(mtcars, "mtcars.csv", row.names = FALSE)
+```
+

@@ -1,0 +1,23 @@
+---
+title: "mtcars is best!"
+author: "Ken"
+date: today
+format: html
+---
+
+## Load the summary
+
+```{r}
+#| echo: false
+tar_read(mtcars_summary) %>% 
+  flextable()
+```
+
+## A graph
+
+```{r}
+#| echo: false
+
+tar_read(mtcars_plot)
+```
+
